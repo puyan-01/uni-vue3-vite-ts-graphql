@@ -1,0 +1,43 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.options": {
+    "extensions": [".js", ".ts", ".vue", ".jsx", ".tsx"]
+  },
+  // 操作时作为单词分隔符的字符
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  // 一个制表符等于的空格数
+  "editor.tabSize": 2,
+  // 保存时格式化
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  // 文件行尾符号,不需要记，甚至不需要了解，CRLF是window换行\r\n, LF是linux/git 换行\n
+  "files.eol": "\n",
+  // 是否以紧凑形式展示文件夹
+  "explorer.compactFolders": false,
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      // 格式化为单引号
+      "singleQuote": false,
+      // 格式化不加分号
+      "semi": false,
+      //格式化去除尾部逗号
+      // "trailingComma": true,
+      "tabWidth": 2,
+      "printWidth": 80,
+      "trailingComma": false,
+      "@typescript-eslint/no-unused-vars": "off",
+      "vue/multi-word-component-names": "off"
+    }
+  },
+  "i18n-ally.localesPaths": ["@/language", "@/language/lang"]
+}
