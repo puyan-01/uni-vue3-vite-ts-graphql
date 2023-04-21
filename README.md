@@ -1,6 +1,7 @@
 # uni-vue3-vite-ts-graphql
-uniapp + Vue3 + graphql 模板代码 实测可用  Villus
-使用了 https://villus.logaretm.com/ 
+uniapp + Vue3 + graphql 模板代码 实测可用 
+###
+使用了 `Villus ` https://villus.logaretm.com/ 
 # 
 > 也可以单独安装 villus 
 > 环境要求在 node >= 14
@@ -9,7 +10,7 @@ uniapp + Vue3 + graphql 模板代码 实测可用  Villus
 ```npm
 npm i graphql villus
 ```
-# src路径下添加  `graphql\gql.ts` 文件
+## src路径下添加  `graphql\gql.ts` 文件
 ```ts
 import { getToken } from '@/utils/cookie'
 import { createClient, fetch } from 'villus'
@@ -67,7 +68,7 @@ export const apolloClient = createClient({
 
 ```
 
-# main.ts 文件下 导入graphql
+## main.ts 文件下 导入graphql
 ```ts
 import { apolloClient } from './graphql/gql'
 
@@ -82,7 +83,7 @@ export function createApp() {
 }
 ```
 
-# 使用 graphql
+## 使用 graphql
 
 ```ts
 
@@ -111,7 +112,7 @@ const textApi = () => {
 export { textApi }
 
 ```
-# 页面使用
+## 页面使用
 ```vue
 <script lang="ts" setup name="index">
 import { textApi } from '@/graphql/api/text'
